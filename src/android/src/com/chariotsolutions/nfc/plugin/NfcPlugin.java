@@ -554,8 +554,8 @@ public class NfcPlugin extends CordovaPlugin implements NfcAdapter.OnNdefPushCom
             if (nfcAdapter == null) {
                 callbackContext.error(STATUS_NO_NFC);
             } else {
-                nfcAdapter.setNdefPushMessage(p2pMessage, getActivity());
-                nfcAdapter.setOnNdefPushCompleteCallback(NfcPlugin.this, getActivity());
+                // nfcAdapter.setNdefPushMessage(p2pMessage, getActivity());
+                // nfcAdapter.setOnNdefPushCompleteCallback(NfcPlugin.this, getActivity());
 
                 PluginResult result = new PluginResult(PluginResult.Status.NO_RESULT);
                 result.setKeepCallback(true);
